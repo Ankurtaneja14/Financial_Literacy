@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <div class="home-menu">
+            <div id="mobile-menu" class="home-mobile-navigation">
+            <h1 class="home-text03">FinEdu Hub</h1>
+              <div class="home-links">
+                <span class="Link"><a href="index.php">Home</a></span>
+                <span class="Link"><a href="resources.html">Resources</a></span>
+                <span class="Link"><a href="index.php#feature">About</a></span>
+                <span class="Link"><a href="index.php#contact">Contact</a></span>
+              </div>
+              <div id="close-mobile-menu" class="home-close-mobile-menu">
+                <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="home-desktop-navigation">
+              <nav class="home-centered">
+                <h1 class="home-text03">FinEdu Hub</h1>
+                <div class="home-left">
+                  <div class="home-links1">
+                    <span class="Link"><a href="index.php">Home</a></span>
+                    <span class="Link"><a href="resources.html">Resources</a></span>
+                    <span class="Link"><a href="index.php#feature">About</a></span>
+                    <span class="Link"><a href="index.php#contact">Contact</a></span>
+                  </div>
+                </div>
+                <div class="home-right">
+                  <span class="home-sign-in Link"><a href="login.html">Login&nbsp;</a></span>
+                  <div class="home-get-started">
+                    <span class="home-text08"><a href="signup.html">Sign Up</a></span>
+                  </div>
+                  <div id="open-mobile-menu" class="home-burger-menu">
+                    <img
+                      alt="pastedImage"
+                      src="public/pastedimage-yxbd.svg"
+                      class="home-mobile-menu-button"
+                    />
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div>
+              <div class="home-container02">
+                <script defer="">
+                  /*
+                  Mobile menu - Code Embed
+                  */
+
+                  // Mobile menu
+                  const mobileMenu = document.querySelector('#mobile-menu')
+
+                  // Buttons
+                  const closeButton = document.querySelector('#close-mobile-menu')
+                  const openButton = document.querySelector('#open-mobile-menu')
+
+                  // On openButton click, set the mobileMenu position left to -100vw
+                  openButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(0%)'
+                  })
+
+                  // On closeButton click, set the mobileMenu position to 0vw
+                  closeButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(100%)'
+                  })
+                </script>
+              </div>
+            </div>
+          </div>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+</body>
+</html>
